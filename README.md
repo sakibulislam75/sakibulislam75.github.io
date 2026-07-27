@@ -1,4 +1,4 @@
-# Sakibul Islam — Portfolio (React + Tailwind + DaisyUI)
+# Sakibul Islam — Personal Website (React + Tailwind + DaisyUI)
 
 Converted from the original static HTML/CSS/JS site into a component-based React app.
 
