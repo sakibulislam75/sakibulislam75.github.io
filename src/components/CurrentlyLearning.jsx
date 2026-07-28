@@ -3,7 +3,7 @@ import { SiExpress, SiMongodb } from 'react-icons/si';
 
 export default function CurrentlyLearning() {
    return (
-      <section className="px-4 py-9 text-white">
+      <section className="px-4 py-9 text-white mb-5">
          <h2 className="mb-6 text-2xl font-medium tracking-tight">Currently Learning</h2>
 
          <a
