@@ -35,7 +35,7 @@ export default function ResumeCard() {
          <a
             ref={buttonRef}
             href="/Sakibul Islam's Resume.pdf"
-            download="Sakibul_Islam_Resume.pdf"
+            download="Sakibul Islam's Resume.pdf"
             target="_blank"
             rel="noreferrer"
             onMouseMove={handleMouseMove}
