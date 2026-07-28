@@ -24,7 +24,7 @@ function Home() {
 export default function App() {
    return (
       <div className="min-h-screen bg-base-100 text-base-content text-[15px]">
-         <div className="mx-auto max-w-[680px] px-4 sm:px-7 md:px-8 lg:max-w-[700px] xl:max-w-[760px] animate-fadeIn-slower">
+         <div className="mx-auto max-w-[680px] px-4 sm:px-7 md:px-8 lg:max-w-[700px] xl:max-w-[760px] ">
             <Navbar />
 
             <Routes>
