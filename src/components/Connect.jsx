@@ -49,7 +49,7 @@ export default function Connect() {
          <p className="mb-6 text-[17px] leading-relaxed text-base-content/70">
             Feel free to contact me at{' '}
             <a
-               href="mailto:sakibulislam1624@gmail.com"
+               href="mailto:sakibulislam1623@gmail.com"
                className="font-medium text-base-content underline decoration-1 underline-offset-2"
             >
                sakibulislam1623@gmail.com
