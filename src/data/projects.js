@@ -1,5 +1,34 @@
 const projects = [
    {
+      slug: 'wanderlust',
+      title: 'WanderLust',
+      category: 'Full-Stack Travel Booking Platform',
+      description:
+         'A full-stack travel booking platform with authentication, destination management, booking features, CRUD operations and secure API authorization.',
+      tech: [
+         'Next.js',
+         'React.js',
+         'Node.js',
+         'Express.js',
+         'MongoDB',
+         'Better Auth',
+         'Tailwind CSS',
+         'HeroUI',
+      ],
+      features: [
+         'Authentication: Email/password and Google authentication.',
+         'Destination Discovery: Browse and explore travel destinations.',
+         'Booking System: Users can book available destinations.',
+         'Full CRUD: Create, read, update, and delete destination data.',
+         'Authorization: JWT/JWKS-based API authorization.',
+         'Responsive UI: Fully optimized for desktop, tablet, and mobile.',
+      ],
+      live: 'https://wanderlust-client-theta.vercel.app',
+      github: 'https://github.com/sakibulislam75/wanderlust-client',
+      image: '/wanderlust.png',
+   },
+   ,
+   {
       slug: 'dragon-news',
       title: 'Dragon News',
       category: 'Full Stack Web Application',
@@ -77,24 +106,6 @@ const projects = [
       live: 'https://keenkeeper75.netlify.app/',
       github: 'https://github.com/sakibulislam75/keen-keeper',
       image: '/keen-keeper.png',
-   },
-
-   {
-      slug: 'digitools-platform',
-      title: 'Digitools Platform',
-      category: 'React Web Application',
-      description:
-         'An all-in-one digital tools platform that provides quick access to productivity and utility tools through a clean responsive interface.',
-      tech: ['React.js', 'Vite', 'Tailwind CSS', 'JavaScript'],
-      features: [
-         'Centralized Tools: Access multiple digital utilities in one platform.',
-         'Fast Performance: Lightweight interface with quick interactions.',
-         'Modern UI: Clean and intuitive user experience.',
-         'Responsive Layout: Fully optimized for all devices.',
-      ],
-      live: 'https://digitools-platform75.netlify.app',
-      github: 'https://github.com/sakibulislam75/digitools-platform',
-      image: '/digitool.png',
    },
 ];
 
