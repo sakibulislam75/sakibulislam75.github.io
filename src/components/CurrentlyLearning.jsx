@@ -3,7 +3,7 @@ import { SiExpress, SiMongodb, SiNextdotjs } from 'react-icons/si';
 
 export default function CurrentlyBuilding() {
    return (
-      <section className="mb-5 px-4 py-9 text-white">
+      <section className="mb-5 px-4 py-9 ">
          <h2 className="mb-6 text-2xl font-medium tracking-tight">Currently Building</h2>
 
          <a
