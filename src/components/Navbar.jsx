@@ -1,10 +1,11 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { FiMenu, FiX } from 'react-icons/fi';
 
 const links = [
-   { href: '#projects', label: 'Projects' },
-   { href: '#skills', label: 'Skills' },
-   { href: '#connect', label: 'Connect' },
+   { href: '/#projects', label: 'Projects' },
+   { href: '/#skills', label: 'Skills' },
+   { href: '/#connect', label: 'Connect' },
 ];
 
 export default function Navbar() {
@@ -13,41 +14,51 @@ export default function Navbar() {
    return (
       <nav className="mb-12 border-b border-base-300 py-5 md:mb-16">
          <div className="flex items-center justify-between">
-            <a href="/" className="text-sm font-medium tracking-tight">
+            <Link
+               to="/"
+               className="text-sm font-medium tracking-tight"
+               onClick={() => setIsOpen(false)}
+            >
                Sakibul Islam
-            </a>
+            </Link>
 
+            {/* Desktop Navigation */}
             <div className="hidden items-center gap-1.5 md:flex">
                {links.map(({ href, label }) => (
-                  <a
+                  <Link
                      key={href}
-                     href={href}
+                     to={href}
                      className="rounded-full border border-transparent px-3 py-1.5 text-[13px] text-base-content/60 transition-colors hover:border-base-300 hover:text-base-content"
                   >
                      {label}
-                  </a>
+                  </Link>
                ))}
             </div>
 
+            {/* Mobile Menu Button */}
             <button
-               onClick={() => setIsOpen(!isOpen)}
+               type="button"
+               onClick={() => setIsOpen((prev) => !prev)}
+               aria-label={isOpen ? 'Close menu' : 'Open menu'}
+               aria-expanded={isOpen}
                className="rounded-lg border border-base-300 p-2 transition hover:bg-base-200 md:hidden"
             >
                {isOpen ? <FiX size={20} /> : <FiMenu size={20} />}
             </button>
          </div>
 
+         {/* Mobile Navigation */}
          {isOpen && (
             <div className="mt-4 flex flex-col gap-2 md:hidden">
                {links.map(({ href, label }) => (
-                  <a
+                  <Link
                      key={href}
-                     href={href}
+                     to={href}
                      onClick={() => setIsOpen(false)}
-                     className="rounded-lg px-3 py-2 text-sm text-base-content/70 transition-colors hover:border-base-300 hover:text-base-content"
+                     className="rounded-lg px-3 py-2 text-sm text-base-content/70 transition-colors hover:bg-base-200 hover:text-base-content"
                   >
                      {label}
-                  </a>
+                  </Link>
                ))}
             </div>
          )}

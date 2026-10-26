@@ -12,7 +12,7 @@ export default function Footer() {
    ];
 
    return (
-      <footer className="border-t border-base-300 py-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+      <footer className="border-t border-base-300 py-6 flex justify-between  items-center sm:flex-row items-start sm:items-center justify-between gap-4">
          {/* Copyright / Tagline */}
          <div className="relative h-5 min-w-[220px] text-[13px] text-base-content/60">
             <span className="absolute animate-flip-front">© 2025 Sakibul Islam.</span>
